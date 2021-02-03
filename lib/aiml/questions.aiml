@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Routing for initial questions to gather information about the users
+    preferences.
+-->
+<aiml version="2.0">
+    <category>
+        <pattern>QUESTION 1</pattern>
+        <template>
+            <srai>CURRENT QUESTION</srai>
+            <delay></delay>
+			Maintaining and adding new routes to an existing API.
+			<srai>REPLY PATTERN SINGULAR BACKEND</srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>QUESTION 2</pattern>
+        <template>
+            <srai>CURRENT QUESTION</srai>
+	        <delay></delay>
+			Developing new UI components using a popular front-end framework 
+			like React, Angular, or Vue. 
+			<srai>REPLY PATTERN SINGULAR FRONTEND</srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>QUESTION 3</pattern>
+        <template>
+            <srai>CURRENT QUESTION</srai>
+	        <delay></delay>
+			Creating the layout, components, and business logic for a 
+			mobile application.
+			<srai>REPLY PATTERN SINGULAR MOBILE</srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>QUESTION 4</pattern>
+        <template>
+        	<srai>CURRENT QUESTION</srai>
+	        <delay></delay>
+			 Collect large amounts of unruly data and transforming it 
+			 into a more usable format.
+			<srai>REPLY PATTERN SINGULAR DATA</srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>QUESTION 5</pattern>
+        <template>
+            <srai>CURRENT QUESTION</srai>
+	        <delay></delay>
+			Creating the layout, components, and business logic for a
+			mobile application using Android, iOS SDK, or some kind of 
+			hybrid framework.
+			<srai>REPLY PATTERN PAIR MOBILE AND FRONTEND</srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>QUESTION 6</pattern>
+        <template>
+	        <srai>CURRENT QUESTION</srai>
+	        <delay></delay>
+			Prefer long term projects and approaching one task at a time.
+			<srai>REPLY PATTERN SINGULAR DATA</srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>QUESTION 7</pattern>
+        <template>
+	        <srai>CURRENT QUESTION</srai>
+	        <delay></delay>
+			Have an affinty towards finding flaws in software evaulating
+			edge cases and variations of input and flow.
+			<srai>REPLY PATTERN SINGULAR TESTING</srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>QUESTION 8</pattern>
+        <template>
+	        <srai>CURRENT QUESTION</srai>
+	        <delay></delay>
+			Spending the day working on analyzing data and deciding what 
+			questions are valuable to team. 
+			<srai>REPLY PATTERN SINGULAR DATA</srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>QUESTION 9</pattern>
+        <template>
+	        <srai>CURRENT QUESTION</srai>
+	        <delay></delay>
+			Adhering to strict data models, awareness of HTTP request/response
+			cycle, writing queries on existing data, and unit testing.
+			<srai>REPLY PATTERN TRIPLE BACKEND AND MOBILE AND TESTING</srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>QUESTION 10</pattern>
+        <template>
+	        <srai>CURRENT QUESTION</srai>
+	        <delay></delay>
+		    Working with databases to insert, retrieve, update, delete records 
+		    and creating a contract of data interaction and flow that is 
+		    consistent and predictable.
+			<srai>REPLY PATTERN SINGULAR BACKEND</srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>QUESTION 11</pattern>
+        <template>
+	        <srai>CURRENT QUESTION</srai>
+	        <delay></delay>
+		    Identify key performance indicators (KPI) for product quality.
+		    KPIs are measurable values that demonstrates how effectively a
+		    company is achieving key business objectives.
+			<srai>REPLY PATTERN SINGULAR TESTING</srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>QUESTION 12</pattern>
+        <template>
+	        <srai>CURRENT QUESTION</srai>
+	        <delay></delay>
+		    Analyzing test results on database impacts, errors or bugs, 
+		    and usability.
+			<srai>REPLY PATTERN SINGULAR TESTING</srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>QUESTION 13</pattern>
+        <template>
+	        <srai>CURRENT QUESTION</srai>
+	        <delay></delay>
+		    Building tools to automate data collection.
+			<srai>REPLY PATTERN SINGULAR DATA</srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>QUESTION 14</pattern>
+        <template>
+	        <srai>CURRENT QUESTION</srai>
+	        <delay></delay>
+		    Ability to manage a hosting environment, including database 
+		    administration as well as scaling applications to handle load 
+		    changes.
+			<srai>REPLY PATTERN SINGULAR BACKEND</srai>
+        </template> 
+    </category>
+    <category>
+        <pattern>QUESTION 15</pattern>
+        <template>
+	        <srai>CURRENT QUESTION</srai>
+	        <delay></delay>
+		     Spend a lot of time focused on research and planning followed by 
+		     data collection and manipulation before actually starting any
+		     building/training/programming.
+			<srai>REPLY PATTERN SINGULAR DATA</srai>
+        </template> 
+    </category>
+</aiml>

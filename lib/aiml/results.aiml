@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>QUESTION RESULTS</pattern>
+        <template>
+            Thank you for your input. 
+            <delay>1</delay>
+            While this process is not perfect or meant to be the final decision,
+            the hope is to help open the idea of what could be possible.
+            <delay>4</delay>
+            Here is a breakdown of suggested interests based on your feedback.
+            A higher score indicates an area you may be more interested in.
+            <delay>2</delay>
+            <srai>INTERNAL RESULTS LIST</srai>
+            <delay>2</delay>
+            Select any of the below options to get information about the role. 
+            This will include a day in the life testimonial and specific advice 
+            from an industry professional in this role. 
+            <delay></delay>
+            <srai>INTERNAL RESULTS CHOICE</srai>
+            You can type "my results" at any time to get back to your breakdown
+            and career options.
+        </template>
+    </category>
+        <category>
+        <pattern>MY RESULTS</pattern>
+        <template>
+            <srai>INTERNAL RESULTS LIST</srai>
+            <srai>INTERNAL RESULTS CHOICE</srai>
+        </template>
+    </category>
+    <category>
+        <pattern>INTERNAL RESULTS LIST</pattern>
+        <template>
+            <ul>
+                <li>Front End: <get name="frontend"></get></li>
+                <li>Back End: <get name="frontend"></get></li>
+                <li>Testing: <get name="testing"></get></li>
+                <li>Data: <get name="data"></get></li>
+                <li>Mobile: <get name="mobile"></get></li>
+            </ul>
+        </template>
+    </category>
+    <category>
+        <pattern>INTERNAL RESULTS CHOICE</pattern>
+        <template>
+			<reply>
+			    <text>Front End Engineer</text>
+			    <postback>JOBFEE</postback>
+		    </reply>
+		    <reply>
+		        <text>Back End Engineer</text>
+		        <postback>JOBBEE</postback>
+	        </reply>
+	        <reply>
+	            <text>Software Testing (QA)</text>
+	            <postback>JOBST</postback>
+            </reply>
+            <reply>
+	            <text>Data Scientist</text>
+	            <postback>JOBDS</postback>
+            </reply>
+            <reply>
+	            <text>Mobile Application Developer</text>
+	            <postback>JOBMAD</postback>
+            </reply>
+        </template>
+    </category>
+</aiml>

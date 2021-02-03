@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    General top level questions to start the conversation.
+-->
+<aiml>
+	<category>
+		<pattern>*</pattern>
+		<template>Welcome! You can type in "jobs" to get started or for 
+		more information you can type: "what is this?"</template>
+	</category>
+	<category>
+	    <pattern>HELP</pattern>
+	    <template>
+	        <ul>
+	            <li>Get started by typing "jobs"</li>
+	            <li>For more information about this project type "what is this?"</li>
+            </ul>
+	    </template>
+    </category>
+    <category>
+        <pattern>WHAT IS THIS</pattern>
+        <template>
+            <card>
+                <image>https://picsum.photos/id/1069/400</image>
+                <title>Andrew Mestas</title>
+            </card>
+            This chatbot is a task that is part of the Introduction to
+            Artificial Intelligence course I am in. 
+            <delay></delay>
+            The purpose of it is to help 
+            offload the work for student career advisors of current and recently
+            graduated Computer Science students. Due to limitations in scope I 
+            reduced the possible careers to software specific jobs as my own 
+            experience and network allowed me to gather relevant information 
+            about this. 
+            <delay></delay>
+            In the process of creating this chatbot I became familiar
+            with the Artificial Intelligence Markup Language and used it in 
+            conjuction with the pandorabots platform. Depending on the response 
+            and interest I would like to extend this bot to other fields.
+            <link>
+                <text>For more information on AIML</text>
+                <url>https://en.wikipedia.org/wiki/AIML</url>
+            </link>
+            If you'd like to contact me regarding feedback, suggestions, 
+            collaboration or anything else
+            feel free to email me at andrew.mestas.dev@gmail.com with the subject
+            "Collaboration [Pandorabots]"
+        </template>
+    </category>
+	<category>
+		<pattern>^ career ^</pattern>
+		<template>
+			<srai>CAREER</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>^ advice ^</pattern>
+		<template>
+			<srai>CAREER</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>^ jobs ^</pattern>
+		<template>
+			<srai>CAREER</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>^ job ^</pattern>
+		<template>
+			<srai>CAREER</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>CAREER</pattern>
+		<template>
+			Do you need career advice?
+			<reply>
+				<text>Yes I do</text>
+				<postback>SHOW MY OPTIONS</postback>
+			</reply>
+			<reply>
+				<text>No I don't</text>
+				<postback>cnegative</postback>
+			</reply>
+		</template>
+	</category>
+	<category>
+		<pattern>SHOW MY OPTIONS</pattern>
+		<template>
+			<srai>CPOSITIVE</srai>
+		</template>
+	</category>
+	<category>
+		<pattern>CPOSITIVE</pattern>
+		<template>
+		    Great. Let's get started! I'm going to ask a <get name="lastquestionindex"></get> questions to 
+		    narrow down the results. Answers range from 0-4. 0 meaning not at all
+		    interested and 4 meaning very interested.
+		    <think>
+                <set name="question">1</set>
+                <set name="lastquestionindex">15</set>
+                <set name="backend">0</set>
+	            <set name="frontend">0</set>
+	            <set name="testing">0</set>
+	            <set name="data">0</set>
+	            <set name="mobile">0</set>
+		    </think>		    		    
+		    <delay>6</delay>
+			<srai>QUESTION <get name="question" /></srai>
+		</template>
+	</category>
+</aiml>

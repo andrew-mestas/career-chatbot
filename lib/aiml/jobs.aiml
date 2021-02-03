@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Contains general information about each job type in the form of a card.
+ Each card redirects to the corresponding file with matching job name.
+-->
+<aiml version="2.0">
+	<category>
+		<pattern>JOBSE</pattern>
+		<template>
+		    What is your role? How many years of experience do you have?
+		    What motivates you in your field?
+		    <delay>6</delay>
+            I am a Senior Software Engineer, I have 10 years experience. My 
+            motivation is: I want to make a positive impact.
+		    <delay>6</delay>
+            What soft and hard skills are needed for your role?
+            <delay>6</delay>
+            Software design, documentation, sql, c#, JavaScript, 
+            web applications 
+            <delay>6</delay>
+             If you could hop in a time machine to before you started your career, 
+             what advice would you share with younger self?
+            <delay>6</delay>
+            You need to keep learning, technology keeps improving.
+            <delay>6</delay>
+            Day in the life: Please describe a typical day-to-day issue 
+            or process that best captures your position.
+            <delay>6</delay>
+            In a typical day, I would analyze a software bug, respond to a 
+            request about how the software works from a Quality Assurance 
+            (QA) engineer, design a feature or software enhancement, 
+            write unit tests, implement a feature (write code).  
+            It’s rare to do all of these on the same day, 
+            but I spend some time on each of these things every month. 
+		</template>
+	</category>
+	<category>
+		<pattern>JOBFEE</pattern>
+		<template>
+		    What is your role? How many years of experience do you have?
+		    What motivates you in your field?
+		    <delay>6</delay>
+            I am a Front End Engineer, I have 4 years experience. My 
+            motivation is: Learning, personal improvement, 
+            working on difficult challenges, and
+            having work that affects large amounts of people
+		    <delay>6</delay>
+            What soft and hard skills are needed for your role?
+		    <delay>6</delay>
+            Good communication, ownership, bias for action, 
+            computer science fundamentals, web technologies.
+            <delay>6</delay>
+             If you could hop in a time machine to before you started your career, 
+             what advice would you share with younger self?
+		    <delay>6</delay>
+            Don't worry so much about not knowing enough, ask the right 
+            questions, pause and think before doing, 
+            always keep learning, have fun days exercising your 
+            skills in a personal project.
+		    <delay>6</delay>
+            Day in the life: Please describe a typical day-to-day issue 
+            or process that best captures your position.
+		    <delay>6</delay>
+            Our team works with React, Node, and some internal tools.
+            A typical day usually consists of working on 1 medium task 
+            and maybe 1-2 smaller ones. I work on a solution and then spend 
+            time making sure it is a solid one by trying to break it and 
+            catch any edge cases. I submit the changes for review with my 
+            team and if it is good I can merge it into the source code 
+            otherwise I get feedback and iterate on the changes. 
+            Other days are more planning with meetings to work out the next
+            tasks and new features for the upcoming sprint.
+		</template>
+	</category>
+		<category>
+		<pattern>JOBBEE</pattern>
+		<template>
+		    Unfortunately, we have not collected personal information on this 
+		    role yet. If you know anyone in this role please share this survey
+		    so we can capture that data. 
+		    <delay></delay>
+		    https://forms.gle/V8QJM7tiVPz5ZBZU8
+		    <delay></delay>
+            For now this is a good starting point.
+		    <button>
+		        <text>Tasks for Back End Engineer</text>
+		        <url>https://www.google.com/search?q=tasks+for+backend+engineer</url>
+	        </button>
+		</template>
+	</category>
+	<category>
+		<pattern>JOBMAD</pattern>
+		<template>
+		    Unfortunately, we have not collected personal information on this 
+		    role yet. If you know anyone in this role please share this survey
+		    so we can capture that data. 
+		    <delay></delay>
+		    https://forms.gle/V8QJM7tiVPz5ZBZU8
+		    <delay></delay>
+            For now this is a good starting point.
+		    <button>
+		        <text>Tasks for Mobile Application Developer</text>
+		        <url>https://www.google.com/search?q=tasks+for+mobile+application+developer</url>
+	        </button>
+		</template>
+	</category>
+	<category>
+		<pattern>JOBST</pattern>
+		<template>
+		    What is your role? How many years of experience do you have?
+		    What motivates you in your field?
+		    <delay>6</delay>
+            I am a Sr. Software Engineer in Test, I have 10 years experience. My 
+            motivation is: creativity, stability, compensation.
+		    <delay>6</delay>
+            What soft and hard skills are needed for your role?
+		    <delay>6</delay>
+            Knowledge of base algorithms and data structures, ability to 
+            write maintainable and reliable code, analytical and trouble 
+            shooting skills, self motivation, critical thinking, 
+            communication skills, desire to keep learning.
+		    <delay>6</delay>
+             If you could hop in a time machine to before you started your career, 
+             what advice would you share with younger self?
+		    <delay>6</delay>
+            Keep close attention to CS courses in university. Try to get as 
+            many internships as possible, make professional connections,
+            always think about new ways for doing same things so you don't 
+            get bored.
+            <delay>6</delay>
+            Day in the life: Please describe a typical day-to-day issue 
+            or process that best captures your position.
+		    <delay>6</delay>
+            Morning standup and other meeting, communication with colleagues, 
+            and usually have quite time in the afternoon to work on current tasks. 
+		</template>
+	</category>
+	<category>
+		<pattern>JOBDS</pattern>
+	    <template>
+		    What is your role? How many years of experience do you have?
+		    What motivates you in your field?
+		    <delay>6</delay>
+            I am a Data scientist, I have 3 years experience. My 
+            motivation is: I love research and coming up with new applications 
+            for emerging methods.
+		    <delay>6</delay>
+            What soft and hard skills are needed for your role?
+		    <delay>6</delay>
+            Python, SQL, R, Swift, Objective-C, data cleaning, time management, 
+            data visualization, explaining technical concepts to wide audiences, 
+            research, teaching, public speaking (by choice, not required)
+            <delay>6</delay>
+             If you could hop in a time machine to before you started your career, 
+             what advice would you share with younger self?
+		    <delay>6</delay>
+            Read more to find out what you're interested in. Start listening 
+            to podcasts about data science. Come up with projects you're
+            excited about and create a portfolio/github sooner rather than 
+            later. Familiarize yourself with source control 
+            (lol I still suck at git)
+            <delay>6</delay>
+            Day in the life: Please describe a typical day-to-day issue 
+            or process that best captures your position.
+		    <delay>6</delay>
+            My projects are typically long term, so I can usually focus on 
+            one thing at a time. I start with a lot of time focused on 
+            research and planning followed by data collection and 
+            manipulation before I actually start any 
+            building/training/programming. I also juggle my main 
+            job with business analytics requests, and learning to balance 
+            ad hoc work and my primary responsibilities took time.
+		</template>
+	</category>
+</aiml>
